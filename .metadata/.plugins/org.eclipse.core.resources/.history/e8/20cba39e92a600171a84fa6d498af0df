@@ -1,7 +1,0 @@
-package ifaces;
-
-public interface TelevisionRules {
-
-	void turnOff();
-	
-}

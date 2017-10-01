@@ -1,6 +1,0 @@
-package ifaces;
-
-public interface LGRules {
-
-	void showLGOptions();
-}

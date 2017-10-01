@@ -1,6 +1,0 @@
-package com.train.cjone;
-
-public interface TelevisionRules {
-
-	void turnOff();
-}

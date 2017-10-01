@@ -1,7 +1,0 @@
-package com.train.cjone;
-
-public class Television {
-
-	int size;
-	
-}
