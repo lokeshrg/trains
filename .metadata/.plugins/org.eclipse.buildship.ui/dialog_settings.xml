@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item value="true" key="use_default_location"/>
+		<item value="C:\gradle" key="gradle_user_home"/>
+		<item value="C:\Users\welcome\workspace\fmrk" key="project_location"/>
+	</section>
+</section>

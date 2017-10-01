@@ -1,0 +1,9 @@
+package com.train.cjone;
+
+public final class Television {
+
+	int size;
+	
+	LgTvOne lg = new LgTvOne();
+	
+}

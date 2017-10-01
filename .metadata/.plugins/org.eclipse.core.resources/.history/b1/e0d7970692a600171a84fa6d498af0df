@@ -1,0 +1,11 @@
+package com.train.cjone;
+
+public class LgTvTwo extends LGTv implements LGRules {
+
+	@Override
+	public void turnOn() {
+		System.out.println("Overrriden inside Lg TV two!");
+
+	}
+
+}

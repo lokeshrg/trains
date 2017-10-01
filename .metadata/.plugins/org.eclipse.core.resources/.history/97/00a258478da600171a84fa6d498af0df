@@ -1,0 +1,5 @@
+package com.train.cjone;
+
+public class LGTv extends Television{
+
+}

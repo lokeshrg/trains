@@ -1,0 +1,19 @@
+package Calculator;
+
+public class Addition {
+
+	public static void main(String[] args) {
+		int result;
+		result = args[0].int + args[1];
+		
+		// TODO Auto-generated method stub
+		System.out.println("The addition of two numbers is " + args[0] + " : " + args[1]);
+		int r2 = addTwo(2, 3);
+
+	}
+	
+	int static addTwo(int a, int b){
+		return a+b;
+	}
+
+}

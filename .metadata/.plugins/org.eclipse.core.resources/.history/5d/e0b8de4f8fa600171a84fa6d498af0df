@@ -1,0 +1,11 @@
+package com.train.cjone;
+
+public class LgTvOne extends LGTv {
+
+	@Override
+	public void turnOn() {
+		System.out.println("Overriden the super method");
+		
+	}
+
+}

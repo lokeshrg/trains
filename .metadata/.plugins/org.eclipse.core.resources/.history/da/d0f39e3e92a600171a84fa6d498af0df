@@ -1,0 +1,6 @@
+package com.train.cjone;
+
+public interface LGRules {
+
+	void showLGOptions();
+}

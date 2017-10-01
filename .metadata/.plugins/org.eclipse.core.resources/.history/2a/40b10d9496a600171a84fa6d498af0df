@@ -1,0 +1,19 @@
+package com.train.cjone;
+
+public final class Television {
+
+	int size;
+	
+	static LGTv lg = new LgTvTwo();
+	public static void main(String[] args) {
+		lg.testM();
+		//lg.turnOn();
+		listTvs(new LgTvOne());
+		listTvs(new LgTvTwo());
+	}
+	
+	public static void listTvs(LGTv lgTV){
+		lgTV.turnOn();
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.train.cjone;
+
+public final class Television {
+
+	int size;
+	
+	static LGTv lg = new LgTvOne();
+	public static void main(String[] args) {
+		lg.testM();
+		lg.turnOn();
+	}
+	
+}

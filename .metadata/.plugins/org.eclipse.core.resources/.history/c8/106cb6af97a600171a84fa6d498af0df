@@ -1,0 +1,10 @@
+package ifaces;
+
+public interface LGRules {
+
+	void showLGOptions();
+	
+	default void testEight(){
+		System.out.println("Hello i am from java 8");
+	}
+}

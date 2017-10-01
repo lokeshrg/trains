@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;Rajesh/src/ifaces&apos;&#x0D;&#x0A;- Original project: &apos;Rajesh&apos;&#x0D;&#x0A;- Destination element: &apos;Rajesh/src/ifaces&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.train.cjone.LGRules.java&#x0D;&#x0A;     com.train.cjone.TelevisionRules.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;ifaces" element1="/src&lt;com.train.cjone{LGRules.java" element2="/src&lt;com.train.cjone{TelevisionRules.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1506853270562" units="2" version="1.0"/>
+</session>
