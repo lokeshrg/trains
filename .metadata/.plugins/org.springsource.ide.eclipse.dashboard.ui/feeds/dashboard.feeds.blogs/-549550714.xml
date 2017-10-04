@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-10-03T21:19:40Z</updated>
+  <updated>2017-10-04T00:35:00Z</updated>
+  <entry>
+    <title>Spring Tips: Reactive Spring Security</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/10/04/spring-tips-reactive-spring-security" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-09-27:3039</id>
+    <updated>2017-10-04T00:35:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this tip, we&amp;rsquo;ll look at the reactive programming support in Spring Security 5.0. We&amp;rsquo;ll look at it in terms of its integration with Spring WebFlux, the reactive web runtime and framework in Spring Framework 5.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LzNhedHo7pM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - October 3rd, 2017 - Spring Framework 5.0 Edition!</title>
     <link rel="alternate" href="https://spring.io/blog/2017/10/03/this-week-in-spring-october-3rd-2017-spring-framework-5-0-edition" />
@@ -1173,128 +1186,5 @@ public List&amp;lt;?&amp;gt; submitOrder() { ... }
     <id>tag:spring.io,2017-09-15:3031</id>
     <updated>2017-09-15T20:04:36Z</updated>
     <content type="html">&lt;p&gt;Spring Web Flow 2.4.6 was released earlier today containing a &lt;a href="https://pivotal.io/security/cve-2017-8039"&gt;security fix&lt;/a&gt;. Applications that use explicit data bindings through the &lt;code&gt;&amp;lt;binder&amp;gt;&lt;/code&gt; element in flow definitions are not affected. Those that do rely on default bindings should upgrade as soon as possible. &lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session MongoDB 2.0.0.M3 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/09/15/spring-session-mongodb-2-0-0-m3-released" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Greg Turnquist</name>
-    </author>
-    <id>tag:spring.io,2017-09-14:3026</id>
-    <updated>2017-09-15T18:10:37Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Session MongoDB 2.0.0.M3 is released. It is based on:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://spring.io/blog/2017/09/15/spring-session-2-0-0-m4"&gt;Spring Session 2.0.0.M4&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://spring.io/blog/2017/09/11/spring-data-ingalls-sr7-and-kay-rc3-released"&gt;Spring Data Kay-RC3&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Reactor Bismuth-M4&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://spring.io/blog/2017/09/11/spring-framework-5-0-rc4-available-now"&gt;Spring Framework 5.0.0.RC4&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In this release, several new features have been added to simplify using it with your Spring WebFlux application.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@EnableMongoWebSession
-public class SpringWebFluxConfig {
-
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;All you must do is apply the &lt;code&gt;@EnableMongoWebSession&lt;/code&gt; to any of your Spring configuration classes to activate session support with MongoDB. Additionally, you must provide a &lt;code&gt;ReactorMongoOperations&lt;/code&gt; Spring bean, but if you&amp;#8217;re using Spring Boot&amp;#8217;s &lt;code&gt;spring-boot-starter-data-mongodb-reactive&lt;/code&gt; starter, this is already provided.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;@EnableMongoWebSession&lt;/code&gt; comes with the ability to set session-wide overrides including &lt;code&gt;maxInactiveIntervalInSeconds&lt;/code&gt; and &lt;code&gt;collectionName&lt;/code&gt;, to match the same features as the servlet-based &lt;code&gt;@EnableMongoHttpSession&lt;/code&gt; annotation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-&lt;code&gt;@EnableMongoWebSession&lt;/code&gt; itself applies a Spring &lt;code&gt;@Configuration&lt;/code&gt; annotation, so there is no need to apply the same annotation to your own configuration class.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Session MongoDB, by default, uses the JDK-based serialization strategy and it is verified to support writing security context details out to MongoDB, making it seemless to integrate with Spring Security.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As mentioned in the &lt;a href="https://spring.io/blog/2017/09/15/spring-session-2-0-0-m4#simplified-webflux-configuration"&gt;recent Spring Session blog post&lt;/a&gt;, Spring Session MongoDB (through Spring Session and Spring WebFlux), leverages cookie-base session handling. This means that when a new session is created, the app will send back to the client a &lt;code&gt;set-cookie SESSION=&amp;#8230;&amp;#8203;&lt;/code&gt; response header, and also check incoming web requests for a cookie named &lt;code&gt;SESSION&lt;/code&gt;. But with Spring Framework 5.0.0.M4, there is now the opportunity to switch from cookies to a header-based strategy.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To change from cookies to headers, simply add this Spring bean to your configuration:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@EnableMongoWebSession
-public class SpringWebFluxConfig {
-
-	@Bean
-	HeaderWebSessionIdResolver headerBasedSessionIdResolver() {
-	    return new HeaderWebSessionIdResolver();
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;When creating a new session, &lt;code&gt;HeaderWebSessionIdResolver&lt;/code&gt; will generate a &lt;code&gt;SESSION=&amp;#8230;&amp;#8203;&lt;/code&gt; response header clients can pick up. And incoming web requests will be parsed for a &lt;code&gt;SESSION=&amp;#8230;&amp;#8203;&lt;/code&gt; request header.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;It&amp;#8217;s also possible to change the name of the header as shown below:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@EnableMongoWebSession
-public class SpringWebFluxConfig {
-
-	@Bean
-	HeaderWebSessionIdResolver headerBasedSessionIdResolver() {
-	    HeaderWebSessionIdResolver resolver = new HeaderWebSessionIdResolver();
-	    resolver.setHeaderName("MyCustomHeaderName"); // Use this instead of SESSION for the header
-	    return resolver;
-	}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With all this, you&amp;#8217;re geared up to use Spring Session MongoDB for session management, and tailor it as you wish!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock important"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Important&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-In the past, Spring Session MongoDB would use Jackson-based serialization if it detected Jackson on the classpath. Since we&amp;#8217;ve switched to JDK-based serialization, and not having it jump purely based on classpath settings, it&amp;#8217;s recommended that any running applications may have to drop existing sessions and reinitialize.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In the meantime, you can get the bits today if you visit the project site, get the coordinates, and &lt;em&gt;include the version number&lt;/em&gt; in your Spring Boot application.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-session-data-mongodb/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session-data-mongodb/docs/2.0.0.M3/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session+mongodb"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

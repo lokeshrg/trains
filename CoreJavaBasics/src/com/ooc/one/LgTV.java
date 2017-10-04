@@ -1,6 +1,8 @@
 package com.ooc.one;
 
 public abstract class LgTV {
+	
+	
 	int size;
 	public void turnOff(){
 		System.out.println("Turned Off in main TV!");
