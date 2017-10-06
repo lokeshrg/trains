@@ -1,0 +1,11 @@
+#Fri Oct 06 11:26:13 CLST 2017
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1507299973369
+c=0
+cmp=usage
+a=finishWizard
+cl=org.eclipse.jdt.internal.ui.refactoring.ExtractSupertypeWizard
+v=2.2.4
+s=1

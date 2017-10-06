@@ -1,0 +1,25 @@
+package com.ooc.one;
+
+public class LgTvOne extends LgTV{
+	int height;
+	int width;
+	
+	
+	
+	public LgTvOne(int i, int j){
+		//this.
+		
+	}
+	@Override
+	public void turnOn() {
+		System.out.println("Turned on in TV One!");
+		
+	}
+
+	
+	@Override
+	public void turnOff(){
+		System.out.println("Turned off in TV One!");
+	}
+	
+}
