@@ -1,0 +1,23 @@
+React, ReactDOM.render
+Component, {Component} in import
+this.props,
+this.refs -> to the event handler, bind 'this' - eg. AddProjects Line 31, 20
+
+angular scope, rootScope, components - React props, refs
+
+
+
+each component has its own state
+state is immutable - set and reset ?
+
+React does not save data - only UI - V in MVC
+but pass the state using a function in the props
+
+
+
+to create stateless component:
+create a regular function that returns JSX/React.createElement
+
+async/await are preferred over simple promise chains  mainly due to readability/maintainability
+
+to work with other libraries like jQuery - for it to find components, ReactDOM.findDomNode and pass the component
