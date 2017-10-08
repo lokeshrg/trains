@@ -1,7 +1,0 @@
-package com.ooc.one;
-
-public class LgTV {
-	int size;
-	
-
-}
