@@ -12,7 +12,8 @@ public class StrangeCounter {
 		Scanner s = new Scanner(System.in);
 		int t = s.nextInt();
 		s.close();
-		for (int i = 0, counter = 1; counter <= t; i++) {
+		System.out.println(betterSolution(t));
+		/*for (int i = 0, counter = 1; counter <= t; i++) {
 			for (long j = (long) (3 * Math.pow(2, i)); j > 0; --j) {
 				System.out.print(counter + ":" + j + "; ");
 				counter++;	
@@ -22,7 +23,7 @@ public class StrangeCounter {
 				}
 			}
 			System.out.println("");
-		}
+		}*/
 	}
 	
 	public static long betterSolution(long t){

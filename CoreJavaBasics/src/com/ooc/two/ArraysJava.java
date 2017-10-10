@@ -1,8 +1,10 @@
-package com.ooc.one;
+package com.ooc.two;
+
+import com.ooc.one.LgTvOne;
 
 public class ArraysJava {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		System.out.println("Hello!");
 		int size = 6;
@@ -32,5 +34,7 @@ public class ArraysJava {
 		System.out.println(strArray[3]);
 		//System.out.println(strArray[4]);
 	}
+	
+	
 
 }
