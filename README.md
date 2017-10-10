@@ -1,2 +1,8 @@
 # trains
-Sample repo towards teaching java basics
+
+Repository for training stuff
+
+Sample repo for 
+ # Java basics
+ # React basics
+ # Algorith Practise
