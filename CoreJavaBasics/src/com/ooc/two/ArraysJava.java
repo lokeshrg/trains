@@ -4,7 +4,7 @@ import com.ooc.one.LgTvOne;
 
 public class ArraysJava {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 
 		System.out.println("Hello!");
 		int size = 6;
@@ -32,7 +32,7 @@ public class ArraysJava {
 
 		String[] strArray = new String[4];
 		System.out.println(strArray[3]);
-		//System.out.println(strArray[4]);
+		System.out.println(strArray[4]);
 	}
 	
 	

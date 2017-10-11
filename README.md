@@ -2,7 +2,8 @@
 
 Repository for training stuff
 
-Sample repo for 
- # Java basics
- # React basics
- # Algorith Practise
+Simple practise repo for:
+ ### Java basics
+ ### React basics
+ ### Rx, RxJS basics
+ ### Algorithmic Practise

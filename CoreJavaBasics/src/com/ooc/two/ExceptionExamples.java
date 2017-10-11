@@ -18,8 +18,23 @@ public class ExceptionExamples {
 		//System.out.println("DB successylly backed up");
 	}
 	
+	public static void testEx(){
+		//throw new RuntimeException();
+		throw new NewUncheckedException();
+	}
+	
+	public static void testCheckedEx(){
+		try {
+			throw new NewJavaException();
+		} catch (NewJavaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	public static void useAccessArray(){
 		//accessArray(new LgTV[8]);
+		
 		try {
 			System.out.println("Before exception");
 			accessArray(new LgTV[6]);
@@ -31,6 +46,10 @@ public class ExceptionExamples {
 			
 			System.out.println("Error occured");
 		} catch( Exception e2 ){
+			//
+		} catch( Error er2 ){
+			//
+		} catch( Throwable t2 ){
 			//
 		} finally{
 			//
