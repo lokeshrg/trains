@@ -4,6 +4,8 @@ Repository for training stuff
 
 Simple practise repo for:
  ### Java basics
+      Java doc official:
+      https://docs.oracle.com/javase/tutorial/java/index.html
  ### React basics
  ### Rx, RxJS basics
  ### Algorithmic Practise
