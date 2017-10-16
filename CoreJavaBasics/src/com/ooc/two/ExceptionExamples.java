@@ -5,8 +5,20 @@ import java.util.prefs.BackingStoreException;
 import com.ooc.one.LgTV;
 
 public class ExceptionExamples {
+	
+	private static int prInt;
+	private int privateNSInt;
+	
+	
+	
+	public void testPrivate(){
+		System.out.println(privateNSInt);
+	}
+	
 	public static void main(String[] args) {
-		useAccessArray();
+		System.out.println(prInt);
+		//useAccessArray();
+		
 	}
 	public static void accessArray(LgTV[] iArr) throws Exception{
 		//throw new Exception();

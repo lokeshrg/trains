@@ -9,6 +9,17 @@ public class ArraysJava {
 		System.out.println("Hello!");
 		int size = 6;
 		int[] integerArray = new int[size];
+		
+		ExceptionExamples exEg = new ExceptionExamples();
+		
+		// non static
+		//ExceptionExamples.EgSampleClass egSample = exEg.new EgSampleClass();
+		
+		//static defn
+		//ExceptionExamples.EgSampleClass egSample = new ExceptionExamples.EgSampleClass();
+		
+		//egSample.
+		//ExceptionExamples.useAccessArray();
 
 		float[] fArr = new float[size];
 		// fArr.
@@ -24,7 +35,7 @@ public class ArraysJava {
 			System.out.println(integerArray[i]);
 		}
 
-		LgTvOne[] lgTvArray = new LgTvOne[3];
+		com.ooc.one.LgTvOne[] lgTvArray = new com.ooc.one.LgTvOne[3];
 		for (int i = 0; i < lgTvArray.length; i++) {
 			lgTvArray[i] = new LgTvOne();
 			System.out.println(lgTvArray[i]);
